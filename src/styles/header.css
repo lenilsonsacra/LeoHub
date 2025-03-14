@@ -51,6 +51,7 @@ header {
 
     header {
         height: auto;
+        position: sticky;
     }
 
     #mobile_btn {
