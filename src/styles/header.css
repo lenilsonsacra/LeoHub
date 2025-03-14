@@ -7,6 +7,7 @@ header {
     z-index: 3;
     height: 110px;
     padding-top: 15px;
+    overflow-y: hidden;
 }
 
 #navbar {
@@ -64,6 +65,10 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #mobile_menu a{
+        color: black;
     }
 
     #mobile_nav_list {
