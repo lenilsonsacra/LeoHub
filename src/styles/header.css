@@ -83,7 +83,13 @@ header {
         text-align: center;
     } 
 
+    #navbar {
+        height: 1px;
+        margin-top: 20px;
+    }
+
     #navbar img{
+        margin-top: 10px;
         height: 80px;
     }
     
