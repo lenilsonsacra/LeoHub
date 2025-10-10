@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    
+    background-image: url(../images/vimal-s-cPGMrfAuUSg-unsplash.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: brown;
+    font-size: 1.2rem;
+}
+
+.logo span {
+    color: rgb(10, 10, 211);
+}
+
+.logo img {
+    height: 50px;
+    padding-right: 1rem;
+}
+
+nav a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #7F00FF;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+.container {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.image img {
+    max-width: 400px;
+    box-shadow: 1px 1px 8px 1px;
+    color: #FFFFFF;
+}
+
+.descricao {
+    color: #FFFFFF;
+    height: 600px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.descricao h1 {
+    font-size: 2.4rem;
+}
+
+.descricao h2 {
+    font-size: 2.3rem;
+}
+
+.descricao p {
+    font-size: 1.2rem;
+    color: #7F00FF;
+}
+
+
+.button {
+    display: flex;
+    height: 5rem;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #7F00FF;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+}
+.button:hover{
+    background-color: brown;
+    color: blue;
+}
+
+.regras{
+    color: #FFFFFF;
+    line-height: 1.8rem;
+    margin: 2% 6%;
+    background-color: rgba(0, 255, 255, 0.04);
+    border-radius: 10px;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+@media (max-width: 760px) {
+    nav{
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img{
+        height: 400px;
+    }
+
+.descricao {
+    height: 300px;
+    width: 80%;
+}
+
+.descricao h1 {
+    font-size: 2rem;
+}
+
+.descricao h2 {
+    font-size: 1.8rem;
+}
+
+.descricao p {
+    font-size: 1rem;
+    color: #7F00FF;
+}
+
+.button {
+    font-size: 1.4rem;
+}
+
+
+}

@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    
+    background-image: url(images/vimal-s-cPGMrfAuUSg-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: brown;
+    font-size: 1.2rem;
+}
+
+.logo span {
+    color: rgb(10, 10, 211);
+}
+
+.logo img {
+    height: 50px;
+    padding-right: 1rem;
+}
+
+nav a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: #7F00FF;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: brown;
+}
+
+.pesquisar input {
+    display: none;
+    background-color: transparent;
+    border: solid 1px #160c9c;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+
+.inicio {
+    height: 100vh;
+    display: flex;
+    padding: 10%;
+    justify-content: space-between;
+    
+}
+
+.img-inicio img {
+    max-height: 50%;
+}
+
+.title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #7F00FF;
+}
+
+.cor-1 {
+    font-size: 2rem;
+    color: brown;
+}
+
+.botao-1 {
+    margin-top: 3rem;
+    width: 13rem;
+    height: 3.4rem;
+    border-radius: 10rem;
+    color: aliceblue;
+    background: linear-gradient(to right, red, blue);
+    border: none;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.botao-1:hover {
+    transform: scale(1.1);
+}
+
+.dispon {
+    margin: 1rem 10%;
+}
+
+.dispon h2 {
+    margin: 2rem 0;
+    color: #ffffff;
+}
+
+
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.popular img {
+    height: 100px;
+}
+
+.popular p {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.pop-net {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    width: 20rem;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px 1px;
+    background: linear-gradient(to right, red, blue);
+    transition: 0.3s;
+    margin-bottom: 2rem;
+}
+
+.pop-net:hover {
+    transform: scale(1.1);
+}
+
+.sobre {
+    margin-top: 5rem;
+}
+
+.sobre img {
+    margin: 0 10%;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.info {
+    color: #7F00FF;
+    margin: 3rem 10%;
+    font-size: 1.8rem;
+}
+
+.assistir {
+    margin: 1rem 10%;
+}
+
+.assistir h2 {
+    color: #ffffff;
+    margin: 2rem 0;
+}
+
+.telas {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.corpo {
+    margin: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dispo {
+    color: #ffffff;
+    margin-left: 10%;
+}
+
+.logo2 {
+    margin: 2rem;
+    border-radius: 1rem 1px 1px;
+
+    backdrop-filter: blur(5px);
+    transition: 0.4s;
+}
+
+.logo2:hover {
+    backdrop-filter: blur(15px);
+    transform: scale(1.03);
+}
+
+.logo2 span {
+    color: #7F00FF;
+}
+
+.logo2 img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 9px;
+
+}
+
+.logo2 p {
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.button {
+    border: solid 1px;
+    display: flex;
+    height: 2rem;
+    border-radius: 2px;
+    font-weight: bolder;
+    color: #7F00FF;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer {
+    margin: 10% 10%;
+    color: #ffffff;
+}
+
+
+@media (max-width: 1368px) {
+
+
+    .inicio {
+        height: auto;
+    }
+
+    .popular {
+        margin: 3rem 0px;
+        justify-content: space-around;
+    }
+
+    .pop-net {
+        margin-bottom: 2rem;
+        width: 100vh;
+    }
+
+    .logo2 {
+        margin: 1rem;
+    }
+
+    .logo2 img {
+        height: 150px;
+        width: 250px;
+    }
+
+}
+
+
+@media (max-width: 857px) {
+
+
+
+    .inicio {
+        padding-top: 20%;
+    }
+
+    .pesquisar input {
+        display: none;
+    }
+
+    .logo img {
+        height: 4rem;
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+    }
+
+    i {
+        display: none;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .botao-1 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .img-inicio {
+        display: none;
+
+    }
+
+    .popular {
+        flex-direction: column;
+    }
+
+    .pop-net {
+        margin-bottom: 2rem;
+        width: auto;
+    }
+
+    .dispon {
+        margin: 1rem 5%;
+    }
+
+    .dispo {
+        margin-bottom: 2rem;
+    }
+
+    .assistir {
+        margin: 1rem 5%
+    }
+
+    .telas img {
+        margin: 1rem 5%;
+        height: 200px;
+        width: 400px;
+    }
+
+    .sobre {
+        margin: 2rem;
+    }
+
+    .sobre img {
+        width: 100%;
+        margin: 0px;
+        height: 6rem;
+
+    }
+
+    .info {
+        margin: 3rem 5%;
+        font-size: 1.3rem;
+    }
+
+    .corpo {
+        margin: 0%;
+    }
+
+    .logo2 {
+        margin: 10px 0px;
+        width: 160px;
+        border-radius: 1px;
+    }
+
+    .logo2 img {
+        height: 120px;
+        width: 100%;
+        border-radius: 3px;
+        margin: 0;
+    }
+
+    .logo2 p {
+        line-height: 30px;
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .button {
+        display: flex;
+        height: 2rem;
+        border-radius: 2px;
+        font-weight: bolder;
+        color: #7F00FF;
+        background-color: #FFFFFF;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
