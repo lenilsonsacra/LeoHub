@@ -1,22 +1,23 @@
 * {
     box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     font-family: sans-serif;
-
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    
+    background-color: #000;
     background-image: url(images/vimal-s-cPGMrfAuUSg-unsplash.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+/* ===== HEADER ===== */
 header {
     display: flex;
     align-items: center;
@@ -25,6 +26,7 @@ header {
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
+    padding: 10px 0;
 }
 
 a {
@@ -49,8 +51,7 @@ a {
 
 nav a {
     padding: 0 1rem;
-    text-decoration: none;
-    color: #7F00FF;
+    color: #ffffff;
     transition: 0.3s;
     font-size: 1.2rem;
 }
@@ -59,21 +60,13 @@ nav a:hover {
     color: brown;
 }
 
-.pesquisar input {
-    display: none;
-    background-color: transparent;
-    border: solid 1px #160c9c;
-    color: #ffffff;
-    font-size: 1.2rem;
-}
-
-
+/* ===== SEÇÃO INICIAL ===== */
 .inicio {
     height: 100vh;
     display: flex;
     padding: 10%;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .img-inicio img {
@@ -96,26 +89,27 @@ nav a:hover {
     width: 13rem;
     height: 3.4rem;
     border-radius: 10rem;
-    color: aliceblue;
-    background: linear-gradient(to right, red, blue);
+    color: #fff;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.836), rgba(0, 0, 255, 0.736));
     border: none;
     font-size: 1.5rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .botao-1:hover {
     transform: scale(1.1);
 }
 
+/* ===== MAIS POPULARES ===== */
 .dispon {
     margin: 1rem 10%;
 }
 
 .dispon h2 {
     margin: 2rem 0;
-    color: #ffffff;
+    color: #fff;
 }
-
 
 .popular {
     display: flex;
@@ -123,16 +117,14 @@ nav a:hover {
     justify-content: space-between;
 }
 
-
 .popular img {
     height: 100px;
 }
 
 .popular p {
-    color: #ffffff;
+    color: #fff;
     display: flex;
     align-items: center;
-    width: 100%;
     font-size: 1.2rem;
 }
 
@@ -142,16 +134,17 @@ nav a:hover {
     gap: 10px;
     width: 20rem;
     border-radius: 10px;
-    box-shadow: 1px 4px 8px 1px;
-    background: linear-gradient(to right, red, blue);
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.314), rgba(0, 0, 255, 0.4));
     transition: 0.3s;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    padding: 10px;
 }
 
 .pop-net:hover {
     transform: scale(1.1);
 }
 
+/* ===== SOBRE ===== */
 .sobre {
     margin-top: 5rem;
 }
@@ -168,12 +161,13 @@ nav a:hover {
     font-size: 1.8rem;
 }
 
+/* ===== SEÇÃO ASSISTIR ===== */
 .assistir {
     margin: 1rem 10%;
 }
 
 .assistir h2 {
-    color: #ffffff;
+    color: #fff;
     margin: 2rem 0;
 }
 
@@ -182,7 +176,17 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.telas img {
+    width: 80%;
+    max-width: 800px;
+}
+
+/* ===== LOGINS DISPONÍVEIS ===== */
+.dispo {
+    color: #fff;
+    margin-left: 10%;
 }
 
 .corpo {
@@ -192,21 +196,16 @@ nav a:hover {
     justify-content: space-around;
 }
 
-.dispo {
-    color: #ffffff;
-    margin-left: 10%;
-}
-
 .logo2 {
     margin: 2rem;
-    border-radius: 1rem 1px 1px;
-
-    backdrop-filter: blur(5px);
+    border-radius: 1rem;
     transition: 0.4s;
+    padding: 10px;
+    text-align: center;
 }
 
 .logo2:hover {
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(2px);
     transform: scale(1.03);
 }
 
@@ -218,16 +217,13 @@ nav a:hover {
     height: 200px;
     width: 300px;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, red, blue);
     border-radius: 9px;
-
+    background: linear-gradient(to right, red, blue);
 }
 
 .logo2 p {
-    color: #ffffff;
+    color: #fff;
     font-size: 1.6rem;
-    padding-bottom: 1rem;
-    text-align: center;
     line-height: 2.5rem;
 }
 
@@ -235,71 +231,58 @@ nav a:hover {
     border: solid 1px;
     display: flex;
     height: 2rem;
-    border-radius: 2px;
+    border-radius: 5px;
     font-weight: bolder;
     color: #7F00FF;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    margin-top: 5px;
+    transition: 0.3s;
 }
 
+.button:hover {
+    background-color: #7F00FF;
+    color: #fff;
+}
 
+/* ===== FOOTER ===== */
 footer {
     margin: 10% 10%;
-    color: #ffffff;
+    color: #fff;
+    text-align: center;
 }
 
-
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 1368px) {
-
-
     .inicio {
         height: auto;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .popular {
-        margin: 3rem 0px;
         justify-content: space-around;
     }
 
     .pop-net {
-        margin-bottom: 2rem;
-        width: 100vh;
-    }
-
-    .logo2 {
-        margin: 1rem;
+        width: 100%;
     }
 
     .logo2 img {
         height: 150px;
         width: 250px;
     }
-
 }
 
-
 @media (max-width: 857px) {
-
-
+    header nav a {
+        display: none;
+    }
 
     .inicio {
+        flex-direction: column;
         padding-top: 20%;
-    }
-
-    .pesquisar input {
-        display: none;
-    }
-
-    .logo img {
-        height: 4rem;
-    }
-
-    .logo h2 {
-        font-size: 2rem;
-    }
-
-    i {
-        display: none;
     }
 
     .title {
@@ -310,93 +293,47 @@ footer {
         font-size: 1rem;
     }
 
-    nav a {
-        display: none;
-    }
-
     .img-inicio {
         display: none;
-
     }
 
     .popular {
         flex-direction: column;
     }
 
-    .pop-net {
-        margin-bottom: 2rem;
-        width: auto;
-    }
-
-    .dispon {
+    .dispon,
+    .assistir,
+    .info {
         margin: 1rem 5%;
     }
 
-    .dispo {
-        margin-bottom: 2rem;
-    }
-
-    .assistir {
-        margin: 1rem 5%
+    .info{
+        font-size: 1rem;
+        margin-bottom: 3rem;
     }
 
     .telas img {
-        margin: 1rem 5%;
-        height: 200px;
-        width: 400px;
-    }
-
-    .sobre {
-        margin: 2rem;
-    }
-
-    .sobre img {
         width: 100%;
-        margin: 0px;
-        height: 6rem;
-
-    }
-
-    .info {
-        margin: 3rem 5%;
-        font-size: 1.3rem;
-    }
-
-    .corpo {
-        margin: 0%;
+        max-width: 400px;
     }
 
     .logo2 {
-        margin: 10px 0px;
-        width: 160px;
-        border-radius: 1px;
+        width: 150px;
+        margin: 10px 0;
     }
 
     .logo2 img {
         height: 120px;
         width: 100%;
-        border-radius: 3px;
-        margin: 0;
     }
 
     .logo2 p {
-        line-height: 30px;
         font-size: 1.2rem;
-        padding: 0;
-        margin: 0;
+        line-height: 30px;
     }
 
-
-    .button {
-        display: flex;
-        height: 2rem;
-        border-radius: 2px;
-        font-weight: bolder;
-        color: #7F00FF;
-        background-color: #FFFFFF;
-        align-items: center;
-        justify-content: center;
-    }
-
-
+    .corpo {
+    margin: 0 0%;
+    justify-content: center;
+}
 }
