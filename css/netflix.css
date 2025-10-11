@@ -106,8 +106,8 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: brown;
-    color: blue;
+    background-color: #7F00FF;
+    color: rgb(255, 255, 255);
 }
 
 /* ===== REGRAS ===== */
@@ -161,6 +161,6 @@ ul {
 
     .button {
         font-size: 1.4rem;
-        height: 4rem;
+        height: 3rem;
     }
 }
