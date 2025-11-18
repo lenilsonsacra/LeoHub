@@ -318,8 +318,8 @@ footer {
     }
 
     .logo2 {
-        width: 150px;
-        margin: 10px 0;
+        width: 48%;      
+        margin: 5px 1%; 
     }
 
     .logo2 img {
@@ -333,7 +333,8 @@ footer {
     }
 
     .corpo {
-    margin: 0 0%;
-    justify-content: center;
-}
+        margin: 0;
+        padding: 0 5px; 
+        justify-content: center;
+    }
 }
